@@ -5,15 +5,15 @@ I am a mobile application developer graduated from Selcuk University Computer En
 <p align='center'>
 <a href="https://www.linkedin.com/in/mustafa-ozdemir/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
  <a href="mailto:mustafaaozdemiir@gmail.com"><img src="https://img.shields.io/badge/-Mail-blue?&style=for-the-badge&logo=Gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="#"><img src="https://estruyf-github.azurewebsites.net/api/VisitorHit?user=mustafaozdemiir&countColor=%237B1E7A" /></a>
+  <a href="#"><img src="https://komarev.com/ghpvc/?username=mustafaozdemiir&style=for-the-badge" /></a>
 </p>
 
 <p align='center'>
-<a href="https://github.com/mustafaozdemiir"><img align="center" src="https://github-readme-stats.vercel.app/api?username=mustafaozdemiir&show_icons=true&bg_color=0d1117&text_color=bdc3c7&title_color=F4D03E&icon_color=F4D03E&hide_border=true" /></a>
+<a href="https://github.com/mustafaozdemiir"><img align="center" src="https://github-readme-stats.vercel.app/api?username=mustafaozdemiir" /></a>
 <br>
 
 <p align="center">
-<a href="https://github.com/mustafaozdemiir"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mustafaozdemiir&bg_color=0d1117&text_color=bdc3c7&title_color=F4D03E&hide_border=true&layout=compact&langs_count=10" /></a>
+<a href="https://github.com/mustafaozdemiir"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mustafaozdemiir&layout=compact" /></a>
 
 <h3 align="center">Languages and Tools:</h3>
 <p align="center">
