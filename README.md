@@ -4,7 +4,8 @@ I am a mobile application developer graduated from Selcuk University Computer En
 
 <p align='center'>
 <a href="https://www.linkedin.com/in/mustafa-ozdemir/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
- <a href="mailto:mustafaaozdemiir@gmail.com"><img src="https://img.shields.io/badge/-Mail-blue?&style=for-the-badge&logo=Gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="mailto:mustafaaozdemiir@gmail.com"><img src="https://img.shields.io/badge/-Mail-blue?&style=for-the-badge&logoColor=white&link=https://www.svgrepo.com/download/229032/internet.svg" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="http://www.mustafa-ozdemir.com/"><img src="https://img.shields.io/badge/-Blog-blue?&style=for-the-badge&logoColor=white&link=https://www.svgrepo.com/download/229032/internet.svg" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="#"><img src="https://komarev.com/ghpvc/?username=mustafaozdemiir&style=for-the-badge" /></a>
 </p>
 
