@@ -1,6 +1,6 @@
 <h1 align='center'> Hi there <img src="https://user-images.githubusercontent.com/53148314/120832912-d7576900-c569-11eb-8de9-71da3412c259.gif" height="30">, I'm Mustafa ÖZDEMİR</h1>
 <p align='center'>
-I am a mobile application developer graduated from Selcuk University Computer Engineering.
+I am a Full Stack developer graduated from Selcuk University Computer Engineering.
 
 <p align='center'>
 <a href="https://www.linkedin.com/in/mustafa-ozdemir/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
