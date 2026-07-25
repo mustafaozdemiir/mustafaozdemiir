@@ -33,8 +33,6 @@
       /* Hover Effects */
       .skill-pill { transition: transform 0.2s ease; }
       .skill-pill:hover { transform: translateY(-2px); }
-      .social-btn { transition: transform 0.2s ease; }
-      .social-btn:hover { transform: translateY(-2px); }
 
       /* Cards */
       .glass-card {
@@ -191,7 +189,7 @@
       <rect x="14" y="52" width="382" height="478" rx="10" class="glass-inner-card" />
 
       <!-- ============================================================= -->
-      <!-- VECTOR MALE DEVELOPER AVATAR PORTRAIT (VIBRANT CRISP COLORS)   -->
+      <!-- VECTOR MALE DEVELOPER AVATAR PORTRAIT                         -->
       <!-- ============================================================= -->
       <g transform="translate(191, 265)">
 
@@ -222,7 +220,7 @@
             <!-- Neck (Natural Skin Tone) -->
             <rect x="-18" y="25" width="36" height="32" rx="6" fill="#CBD5E1" />
 
-            <!-- ELEGANT NATURAL JAWLINE & CHIN (Vibrant & Handsome Light Skin Tone) -->
+            <!-- ELEGANT NATURAL JAWLINE & CHIN -->
             <path d="M -40 -20 C -40 22, -30 52, 0 60 C 30 52, 40 22, 40 -20 C 40 -40, -40 -40, -40 -20 Z" fill="#E2E8F0" />
             
             <!-- Ears -->
@@ -237,11 +235,11 @@
             <!-- Forehead Highlight -->
             <path d="M -24 -22 Q 0 -30 24 -22 Q 0 -16 -24 -22 Z" fill="#FFFFFF" opacity="0.3" />
 
-            <!-- CALM, NATURAL EYEBROWS (Crisp dark stroke) -->
+            <!-- CALM, NATURAL EYEBROWS -->
             <path d="M -25 -9 Q -15 -12 -5 -9" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" />
             <path d="M 5 -9 Q 15 -12 25 -9" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" />
 
-            <!-- NARROWED CALM EYES (Crisp White Sclera + Dark Pupils) -->
+            <!-- NARROWED CALM EYES -->
             <!-- Left Eye -->
             <g transform="translate(-16, -1)">
               <ellipse cx="0" cy="0" rx="7.5" ry="2.9" fill="#FFFFFF" stroke="#0F172A" stroke-width="1.2" />
@@ -318,187 +316,144 @@
     <g transform="translate(30, 60)">
 
       <!-- Greeting & Name -->
-      <text x="0" y="20" class="font-sans" font-size="15" fill="#94A3B8" font-weight="500">Hi 👋, I'm</text>
-      <text x="85" y="22" class="font-sans" font-size="28" fill="url(#accent-grad)" font-weight="800" letter-spacing="-0.5" filter="url(#glow-cyan)">MUSTAFA ÖZDEMİR</text>
+      <text x="0" y="24" class="font-sans" font-size="15" fill="#94A3B8" font-weight="500">Hi 👋, I'm</text>
+      <text x="85" y="26" class="font-sans" font-size="28" fill="url(#accent-grad)" font-weight="800" letter-spacing="-0.5" filter="url(#glow-cyan)">MUSTAFA ÖZDEMİR</text>
 
       <!-- Role Typing Line -->
-      <g transform="translate(0, 56)">
-        <text x="0" y="16" class="font-mono" font-size="13" fill="#E2E8F0" font-weight="500">"role":</text>
+      <g transform="translate(0, 66)">
+        <text x="0" y="16" class="font-mono" font-size="13.5" fill="#E2E8F0" font-weight="500">"role":</text>
         <g transform="translate(75, 0)">
           <g clip-path="url(#clip-type1)">
-            <text x="0" y="16" class="font-mono" font-size="13" fill="#22D3EE" font-weight="600">"Full Stack Developer"</text>
+            <text x="0" y="16" class="font-mono" font-size="13.5" fill="#22D3EE" font-weight="600">"Full Stack Developer"</text>
           </g>
           <g clip-path="url(#clip-type2)">
-            <text x="0" y="16" class="font-mono" font-size="13" fill="#A855F7" font-weight="600">"Java &amp; Spring Boot Specialist"</text>
+            <text x="0" y="16" class="font-mono" font-size="13.5" fill="#A855F7" font-weight="600">"Java &amp; Spring Boot Specialist"</text>
           </g>
         </g>
         <rect x="368" y="4" width="7" height="14" fill="#22D3EE" style="animation: cursorBlink 1s infinite;" />
       </g>
 
       <!-- Divider 1 -->
-      <line x1="0" y1="92" x2="628" y2="92" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+      <line x1="0" y1="108" x2="628" y2="108" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
 
       <!-- Sequential Details List -->
       <!-- Location -->
-      <g transform="translate(0, 112)">
-        <text class="font-mono" font-size="12" fill="#F472B6" font-weight="500">📍 "location":</text>
-        <text x="140" class="font-sans" font-size="13" fill="#F8FAFC" font-weight="500">"Muratpaşa / Antalya, Turkey"</text>
+      <g transform="translate(0, 134)">
+        <text class="font-mono" font-size="13" fill="#F472B6" font-weight="500">📍 "location":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#F8FAFC" font-weight="500">"Muratpaşa / Antalya, Turkey"</text>
       </g>
 
       <!-- Education -->
-      <g transform="translate(0, 138)">
-        <text class="font-mono" font-size="12" fill="#FBBF24" font-weight="500">🎓 "education":</text>
-        <text x="140" class="font-sans" font-size="13" fill="#F8FAFC" font-weight="500">"Selçuk University - Computer Engineering"</text>
+      <g transform="translate(0, 168)">
+        <text class="font-mono" font-size="13" fill="#FBBF24" font-weight="500">🎓 "education":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#F8FAFC" font-weight="500">"Selçuk University - Computer Engineering"</text>
       </g>
 
       <!-- Focus -->
-      <g transform="translate(0, 164)">
-        <text class="font-mono" font-size="12" fill="#34D399" font-weight="500">🚀 "focus":</text>
-        <text x="140" class="font-sans" font-size="13" fill="#F8FAFC" font-weight="500">"Java, Spring Boot &amp; Microservices Architecture"</text>
+      <g transform="translate(0, 202)">
+        <text class="font-mono" font-size="13" fill="#34D399" font-weight="500">🚀 "focus":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#F8FAFC" font-weight="500">"Java, Spring Boot &amp; Microservices Architecture"</text>
       </g>
 
       <!-- Portfolio -->
-      <g transform="translate(0, 190)">
-        <text class="font-mono" font-size="12" fill="#60A5FA" font-weight="500">🌐 "portfolio":</text>
-        <text x="140" class="font-sans" font-size="13" fill="#38BDF8" font-weight="600">"portfolyo.yazilimmotoru.com"</text>
+      <g transform="translate(0, 236)">
+        <text class="font-mono" font-size="13" fill="#60A5FA" font-weight="500">🌐 "portfolio":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#38BDF8" font-weight="600">"portfolyo.yazilimmotoru.com"</text>
       </g>
 
       <!-- Email -->
-      <g transform="translate(0, 216)">
-        <text class="font-mono" font-size="12" fill="#C084FC" font-weight="500">✉️ "contact":</text>
-        <text x="140" class="font-sans" font-size="13" fill="#F8FAFC" font-weight="500">"mustafaaozdemiir@gmail.com"</text>
+      <g transform="translate(0, 270)">
+        <text class="font-mono" font-size="13" fill="#C084FC" font-weight="500">✉️ "contact":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#F8FAFC" font-weight="500">"mustafaaozdemiir@gmail.com"</text>
       </g>
 
       <!-- Divider 2 -->
-      <line x1="0" y1="244" x2="628" y2="244" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+      <line x1="0" y1="308" x2="628" y2="308" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
 
       <!-- Skills Header & Pills -->
-      <text x="0" y="266" class="font-mono" font-size="11" fill="#94A3B8" font-weight="700" letter-spacing="1">⚡ TECH STACK &amp; SKILLS</text>
+      <text x="0" y="334" class="font-mono" font-size="12" fill="#94A3B8" font-weight="700" letter-spacing="1">⚡ TECH STACK &amp; SKILLS</text>
 
-      <!-- Pills Row 1 (y = 280) -->
-      <g transform="translate(0, 280)">
+      <!-- Pills Row 1 (y = 352) -->
+      <g transform="translate(0, 352)">
         <g class="skill-pill" transform="translate(0, 0)">
-          <rect width="68" height="26" rx="6" fill="#0F172A" stroke="#7C3AED" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#7C3AED" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Java</text>
+          <rect width="70" height="28" rx="6" fill="#0F172A" stroke="#7C3AED" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#7C3AED" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Java</text>
         </g>
 
-        <g class="skill-pill" transform="translate(76, 0)">
-          <rect width="108" height="26" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#10B981" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Spring Boot</text>
+        <g class="skill-pill" transform="translate(78, 0)">
+          <rect width="112" height="28" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#10B981" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Spring Boot</text>
         </g>
 
-        <g class="skill-pill" transform="translate(192, 0)">
-          <rect width="72" height="26" rx="6" fill="#0F172A" stroke="#22D3EE" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#22D3EE" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">React</text>
+        <g class="skill-pill" transform="translate(198, 0)">
+          <rect width="74" height="28" rx="6" fill="#0F172A" stroke="#22D3EE" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#22D3EE" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">React</text>
         </g>
 
-        <g class="skill-pill" transform="translate(272, 0)">
-          <rect width="76" height="26" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#38BDF8" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Flutter</text>
+        <g class="skill-pill" transform="translate(280, 0)">
+          <rect width="78" height="28" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#38BDF8" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Flutter</text>
         </g>
 
-        <g class="skill-pill" transform="translate(356, 0)">
-          <rect width="62" height="26" rx="6" fill="#0F172A" stroke="#60A5FA" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#60A5FA" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Dart</text>
-        </g>
-
-        <g class="skill-pill" transform="translate(426, 0)">
-          <rect width="98" height="26" rx="6" fill="#0F172A" stroke="#818CF8" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#818CF8" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">PostgreSQL</text>
-        </g>
-
-        <g class="skill-pill" transform="translate(532, 0)">
-          <rect width="72" height="26" rx="6" fill="#0F172A" stroke="#EF4444" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#EF4444" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Oracle</text>
-        </g>
-      </g>
-
-      <!-- Pills Row 2 (y = 314) -->
-      <g transform="translate(0, 314)">
-        <g class="skill-pill" transform="translate(0, 0)">
-          <rect width="100" height="26" rx="6" fill="#0F172A" stroke="#FBBF24" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#FBBF24" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">TypeScript</text>
-        </g>
-
-        <g class="skill-pill" transform="translate(108, 0)">
-          <rect width="72" height="26" rx="6" fill="#0F172A" stroke="#C084FC" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#C084FC" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Kotlin</text>
-        </g>
-
-        <g class="skill-pill" transform="translate(188, 0)">
-          <rect width="76" height="26" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#38BDF8" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Docker</text>
-        </g>
-
-        <g class="skill-pill" transform="translate(272, 0)">
-          <rect width="56" height="26" rx="6" fill="#0F172A" stroke="#F97316" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#F97316" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Git</text>
-        </g>
-
-        <g class="skill-pill" transform="translate(336, 0)">
-          <rect width="94" height="26" rx="6" fill="#0F172A" stroke="#34D399" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#34D399" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">REST APIs</text>
+        <g class="skill-pill" transform="translate(366, 0)">
+          <rect width="64" height="28" rx="6" fill="#0F172A" stroke="#60A5FA" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#60A5FA" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Dart</text>
         </g>
 
         <g class="skill-pill" transform="translate(438, 0)">
-          <rect width="112" height="26" rx="6" fill="#0F172A" stroke="#A855F7" stroke-width="1" />
-          <circle cx="12" cy="13" r="3" fill="#A855F7" />
-          <text x="22" y="17" class="font-mono" font-size="11" fill="#E2E8F0" font-weight="600">Microservices</text>
+          <rect width="102" height="28" rx="6" fill="#0F172A" stroke="#818CF8" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#818CF8" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">PostgreSQL</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(548, 0)">
+          <rect width="74" height="28" rx="6" fill="#0F172A" stroke="#EF4444" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#EF4444" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Oracle</text>
         </g>
       </g>
 
-      <!-- Divider 3 -->
-      <line x1="0" y1="354" x2="628" y2="354" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
-
-      <!-- Action Buttons Grid (y = 370) -->
-      <g transform="translate(0, 370)">
-        <!-- GitHub Button -->
-        <g class="social-btn" transform="translate(0, 0)">
-          <rect width="140" height="34" rx="8" fill="#090D16" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-          <g transform="translate(14, 9.5) scale(0.65)">
-            <path d="M 12 0 C 5.37 0 0 5.37 0 12 C 0 17.3 3.44 21.8 8.25 23.4 C 8.85 23.5 9.07 23.15 9.07 22.82 C 9.07 22.52 9.06 21.73 9.05 20.67 C 5.72 21.39 5.02 19.06 5.02 19.06 C 4.47 17.67 3.68 17.3 3.68 17.3 C 2.6 16.56 3.76 16.58 3.76 16.58 C 4.96 16.66 5.59 17.81 5.59 17.81 C 6.65 19.63 8.38 19.1 9.06 18.8 C 9.17 18.03 9.48 17.5 9.82 17.2 C 7.16 16.9 4.37 15.87 4.37 11.28 C 4.37 9.97 4.83 8.9 5.6 8.06 C 5.48 7.76 5.07 6.54 5.72 4.89 C 5.72 4.89 6.72 4.57 9.01 6.12 C 9.96 5.86 10.98 5.73 12 5.72 C 13.02 5.73 14.04 5.86 14.99 6.12 C 17.27 4.56 18.27 4.89 18.27 4.89 C 18.93 6.54 18.52 7.76 18.4 8.06 C 19.17 8.9 19.63 9.97 19.63 11.28 C 19.63 15.88 16.83 16.9 14.16 17.2 C 14.59 17.57 14.98 18.3 14.98 19.42 C 14.98 21.02 15.18 23.52 15.79 23.4 C 20.59 21.8 24 17.3 24 12 C 24 5.37 18.63 0 12 0 Z" fill="#F8FAFC" />
-          </g>
-          <text x="38" y="17" class="font-sans" font-size="12" fill="#F8FAFC" font-weight="600" dominant-baseline="central">GitHub</text>
+      <!-- Pills Row 2 (y = 390) -->
+      <g transform="translate(0, 390)">
+        <g class="skill-pill" transform="translate(0, 0)">
+          <rect width="104" height="28" rx="6" fill="#0F172A" stroke="#FBBF24" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#FBBF24" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">TypeScript</text>
         </g>
 
-        <!-- LinkedIn Button -->
-        <g class="social-btn" transform="translate(152, 0)">
-          <rect width="146" height="34" rx="8" fill="#090D16" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-          <g transform="translate(14, 9.5) scale(0.72)">
-            <path d="M 3 0 C 1.34 0 0 1.34 0 3 C 0 4.66 1.34 6 3 6 C 4.66 6 6 4.66 6 3 C 6 1.34 4.66 0 3 0 Z M 0.5 8 L 5.5 8 L 5.5 20 L 0.5 20 Z M 8 8 L 12.8 8 L 12.8 9.6 C 13.5 8.4 14.9 7.7 16.5 7.7 C 20 7.7 21 9.8 21 13.2 L 21 20 L 16 20 L 16 14 C 16 12.4 15.5 11.5 14.2 11.5 C 12.8 11.5 12 12.5 12 14 L 12 20 L 7 20 Z" fill="#0A66C2" />
-          </g>
-          <text x="38" y="17" class="font-sans" font-size="12" fill="#F8FAFC" font-weight="600" dominant-baseline="central">LinkedIn</text>
+        <g class="skill-pill" transform="translate(112, 0)">
+          <rect width="74" height="28" rx="6" fill="#0F172A" stroke="#C084FC" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#C084FC" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Kotlin</text>
         </g>
 
-        <!-- Portfolio Button -->
-        <g class="social-btn" transform="translate(310, 0)">
-          <rect width="146" height="34" rx="8" fill="#090D16" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-          <g transform="translate(14, 9.5)">
-            <circle cx="7.5" cy="7.5" r="6.5" fill="none" stroke="#22D3EE" stroke-width="1.6" />
-            <path d="M 1 7.5 L 14 7.5 M 7.5 1 C 9.5 3 9.5 12 7.5 14 M 7.5 1 C 5.5 3 5.5 12 7.5 14" fill="none" stroke="#22D3EE" stroke-width="1.1" />
-          </g>
-          <text x="38" y="17" class="font-sans" font-size="12" fill="#F8FAFC" font-weight="600" dominant-baseline="central">Portfolio</text>
+        <g class="skill-pill" transform="translate(194, 0)">
+          <rect width="78" height="28" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#38BDF8" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Docker</text>
         </g>
 
-        <!-- Contact Button -->
-        <g class="social-btn" transform="translate(468, 0)">
-          <rect width="140" height="34" rx="8" fill="#090D16" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
-          <g transform="translate(14, 10.5) scale(0.8)">
-            <path d="M 2 0 C 0.9 0 0 0.9 0 2 L 0 14 C 0 15.1 0.9 16 2 16 L 16 16 C 17.1 16 18 15.1 18 14 L 18 2 C 18 0.9 17.1 0 16 0 Z M 9 9 L 2 3 L 16 3 Z" fill="#A855F7" />
-          </g>
-          <text x="38" y="17" class="font-sans" font-size="12" fill="#F8FAFC" font-weight="600" dominant-baseline="central">Contact</text>
+        <g class="skill-pill" transform="translate(280, 0)">
+          <rect width="58" height="28" rx="6" fill="#0F172A" stroke="#F97316" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#F97316" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Git</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(346, 0)">
+          <rect width="98" height="28" rx="6" fill="#0F172A" stroke="#34D399" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#34D399" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">REST APIs</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(452, 0)">
+          <rect width="116" height="28" rx="6" fill="#0F172A" stroke="#A855F7" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#A855F7" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#E2E8F0" font-weight="600">Microservices</text>
         </g>
       </g>
 
