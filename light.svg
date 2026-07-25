@@ -1,0 +1,446 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap');
+
+      .bg-canvas { fill: #FFFFFF; }
+      .font-sans { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+      .font-mono { font-family: 'Fira Code', 'Courier New', monospace; }
+
+      /* Shimmer Border */
+      @keyframes borderGlowLight {
+        0%, 100% { stroke: #2563EB; }
+        33% { stroke: #06B6D4; }
+        66% { stroke: #10B981; }
+      }
+
+      /* Floating particles */
+      @keyframes floatP1 {
+        0%, 100% { transform: translate(0, 0); opacity: 0.25; }
+        50% { transform: translate(12px, -18px); opacity: 0.65; }
+      }
+      @keyframes floatP2 {
+        0%, 100% { transform: translate(0, 0); opacity: 0.3; }
+        50% { transform: translate(-15px, -25px); opacity: 0.7; }
+      }
+
+      /* Cursor Blink */
+      @keyframes cursorBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      /* Hover Effects */
+      .skill-pill { transition: transform 0.2s ease; }
+      .skill-pill:hover { transform: translateY(-2px); }
+
+      /* Cards */
+      .glass-card {
+        fill: #F8FAFC;
+        fill-opacity: 0.95;
+        stroke: rgba(15, 23, 42, 0.08);
+        stroke-width: 1px;
+      }
+      .glass-inner-card {
+        fill: #FFFFFF;
+        fill-opacity: 0.95;
+        stroke: rgba(15, 23, 42, 0.06);
+        stroke-width: 1px;
+      }
+    </style>
+
+    <!-- Filters -->
+    <filter id="glow-light-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="card-shadow-light" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F172A" flood-opacity="0.06" />
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="accent-grad-light" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB">
+        <animate attributeName="stop-color" values="#2563EB; #06B6D4; #10B981; #2563EB" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#06B6D4">
+        <animate attributeName="stop-color" values="#06B6D4; #10B981; #2563EB; #06B6D4" dur="8s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#10B981">
+        <animate attributeName="stop-color" values="#10B981; #2563EB; #06B6D4; #10B981" dur="8s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="cyber-avatar-grad-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EFF6FF" />
+      <stop offset="50%" stop-color="#DBEAFE" />
+      <stop offset="100%" stop-color="#93C5FD" />
+    </linearGradient>
+
+    <linearGradient id="border-shimmer-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Background Radial Orbs -->
+    <radialGradient id="orb-blue-light" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid-light" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#0F172A" stroke-opacity="0.03" stroke-width="1" />
+    </pattern>
+
+    <!-- Typing Clips -->
+    <clipPath id="clip-type1-light">
+      <rect x="0" y="0" width="0" height="30">
+        <animate attributeName="width" values="0; 210; 210; 0; 0" keyTimes="0; 0.25; 0.45; 0.5; 1" dur="8s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+    <clipPath id="clip-type2-light">
+      <rect x="0" y="0" width="0" height="30">
+        <animate attributeName="width" values="0; 0; 290; 290; 0" keyTimes="0; 0.5; 0.72; 0.92; 1" dur="8s" repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <!-- Circle Clip for Avatar Inner Elements -->
+    <clipPath id="avatar-clip-light">
+      <circle cx="0" cy="0" r="124" />
+    </clipPath>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="1180" height="610" rx="18" class="bg-canvas" />
+
+  <!-- Radial Glow Orbs -->
+  <g>
+    <circle cx="200" cy="120" r="320" fill="url(#orb-blue-light)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 20,15; -15,25; 0,0" dur="10s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Cyber Grid -->
+  <rect width="1180" height="610" rx="18" fill="url(#cyber-grid-light)" />
+
+  <!-- Ambient Floating Particles -->
+  <g>
+    <circle cx="120" cy="480" r="1.5" fill="#0284C7" style="animation: floatP1 7s infinite ease-in-out;" />
+    <circle cx="280" cy="150" r="2" fill="#2563EB" style="animation: floatP2 9s infinite ease-in-out;" />
+    <circle cx="750" cy="80" r="1.5" fill="#059669" style="animation: floatP1 8s infinite ease-in-out 1s;" />
+  </g>
+
+  <!-- Canvas Outer Border -->
+  <rect x="1" y="1" width="1178" height="608" rx="17" fill="none" stroke="url(#border-shimmer-light)" stroke-width="1.5" opacity="0.8" />
+
+  <!-- ================================================================= -->
+  <!-- LEFT PANEL: MUSTAFA ÖZDEMİR VECTOR PORTRAIT (Light Mode)          -->
+  <!-- ================================================================= -->
+  <g transform="translate(32, 32)" filter="url(#card-shadow-light)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="5s" repeatCount="indefinite" />
+      
+      <!-- Frame -->
+      <rect width="410" height="546" rx="14" class="glass-card" />
+
+      <!-- Header Bar -->
+      <rect width="410" height="40" rx="14" fill="#F1F5F9" fill-opacity="0.95" />
+      <rect y="26" width="410" height="14" fill="#F1F5F9" fill-opacity="0.95" />
+      <line x1="0" y1="40" x2="410" y2="40" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
+
+      <!-- Window Dots -->
+      <circle cx="22" cy="20" r="5" fill="#EF4444" opacity="0.9" />
+      <circle cx="36" cy="20" r="5" fill="#F59E0B" opacity="0.9" />
+      <circle cx="50" cy="20" r="5" fill="#10B981" opacity="0.9" />
+
+      <!-- Title & Live Badge -->
+      <text x="70" y="24" class="font-mono" font-size="11" fill="#475569" font-weight="500">developer_portrait.sys</text>
+      <g transform="translate(325, 12)">
+        <rect width="68" height="16" rx="8" fill="#10B981" fill-opacity="0.12" stroke="#10B981" stroke-opacity="0.4" stroke-width="1" />
+        <circle cx="12" cy="8" r="3" fill="#047857" filter="url(#glow-light-blue)">
+          <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+        </circle>
+        <text x="22" y="11.5" class="font-mono" font-size="9" fill="#047857" font-weight="700">LIVE</text>
+      </g>
+
+      <!-- Inner Terminal Box -->
+      <rect x="14" y="52" width="382" height="478" rx="10" class="glass-inner-card" />
+
+      <!-- ============================================================= -->
+      <!-- VECTOR MALE DEVELOPER AVATAR PORTRAIT                         -->
+      <!-- ============================================================= -->
+      <g transform="translate(191, 265)">
+
+        <!-- Glowing Outer Pulse Orbit Rings -->
+        <circle cx="0" cy="0" r="135" fill="none" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 8" opacity="0.35">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite" />
+        </circle>
+        
+        <circle cx="0" cy="0" r="145" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-dasharray="12 16" opacity="0.25">
+          <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="25s" repeatCount="indefinite" />
+        </circle>
+
+        <!-- Base Glow Circle Frame -->
+        <circle cx="0" cy="0" r="125" fill="url(#cyber-avatar-grad-light)" stroke="#2563EB" stroke-width="2" filter="url(#glow-light-blue)" />
+
+        <!-- Cyber Grid inside Avatar -->
+        <circle cx="0" cy="0" r="124" fill="url(#cyber-grid-light)" opacity="0.3" />
+
+        <!-- CLIPPED AVATAR CONTENT -->
+        <g clip-path="url(#avatar-clip-light)">
+          <!-- Scaled 1.18x to fill circle -->
+          <g transform="translate(0, 22) scale(1.18)">
+            
+            <!-- Dark Crew-Neck Shirt Base -->
+            <path d="M -75 75 L 75 75 L 60 55 C 35 48, -35 48, -60 55 Z" fill="#1E293B" stroke="#334155" stroke-width="2" />
+            <path d="M -28 50 Q 0 65 28 50" fill="none" stroke="#475569" stroke-width="3" />
+
+            <!-- Neck -->
+            <rect x="-18" y="25" width="36" height="32" rx="6" fill="#94A3B8" opacity="0.9" />
+
+            <!-- ELEGANT NATURAL JAWLINE & CHIN -->
+            <path d="M -40 -20 C -40 22, -30 52, 0 60 C 30 52, 40 22, 40 -20 C 40 -40, -40 -40, -40 -20 Z" fill="#CBD5E1" opacity="0.95" />
+            
+            <!-- Ears -->
+            <ellipse cx="-42" cy="-5" rx="5" ry="11" fill="#CBD5E1" />
+            <ellipse cx="42" cy="-5" rx="5" ry="11" fill="#CBD5E1" />
+
+            <!-- REAL HAIR (Mustafa Selfie short buzzed/cropped cut with slight front tuft & high temple hairline) -->
+            <path d="M -41 -12 L -41 -42 Q -24 -72 0 -72 Q 24 -72 41 -42 L 41 -12 L 36 -10 C 36 -26, 28 -40, 20 -42 C 10 -44, 0 -36, -4 -36 C -12 -36, -20 -44, -28 -42 C -36 -26, -36 -10, -36 -10 Z" fill="#0F172A" />
+            <path d="M -40 -40 C -26 -70 -10 -70 0 -70 C 10 -70 26 -70 40 -40 C 41 -28 39 -14 37 -7 C 34 -22 24 -36 16 -38 C 6 -40 0 -32 -4 -32 C -12 -32 -18 -40 -26 -38 C -32 -22 -34 -14 -37 -7 Z" fill="#1E293B" />
+            <path d="M -5 -33 Q 0 -40 5 -33 Q 0 -30 -5 -33 Z" fill="#334155" opacity="0.8" />
+
+            <!-- High Forehead Highlight -->
+            <path d="M -24 -22 Q 0 -30 24 -22 Q 0 -16 -24 -22 Z" fill="#E2E8F0" opacity="0.6" />
+
+            <!-- CALM, NATURAL EYEBROWS -->
+            <path d="M -25 -9 Q -15 -12 -5 -9" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M 5 -9 Q 15 -12 25 -9" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" />
+
+            <!-- NARROWED CALM EYES -->
+            <!-- Left Eye -->
+            <g transform="translate(-16, -1)">
+              <ellipse cx="0" cy="0" rx="7.5" ry="2.9" fill="#FFFFFF" stroke="#0F172A" stroke-width="1.2" />
+              <circle cx="0" cy="0" r="2.4" fill="#78350F" />
+              <circle cx="0" cy="0" r="1.3" fill="#020617" />
+              <circle cx="-0.7" cy="-0.7" r="0.5" fill="#FFFFFF" />
+            </g>
+
+            <!-- Right Eye -->
+            <g transform="translate(16, -1)">
+              <ellipse cx="0" cy="0" rx="7.5" ry="2.9" fill="#FFFFFF" stroke="#0F172A" stroke-width="1.2" />
+              <circle cx="0" cy="0" r="2.4" fill="#78350F" />
+              <circle cx="0" cy="0" r="1.3" fill="#020617" />
+              <circle cx="-0.7" cy="-0.7" r="0.5" fill="#FFFFFF" />
+            </g>
+
+            <!-- Nose Line & Shadow -->
+            <path d="M 0 -4 L -3 18 Q 0 21 4 19 Q 0 17 0 -4 Z" fill="#94A3B8" opacity="0.8" />
+            <path d="M -4 19 Q 0 23 4 19" fill="none" stroke="#334155" stroke-width="1.5" stroke-linecap="round" />
+
+            <!-- CLEAN SHAVED ELEGANT NATURAL SMILE -->
+            <path d="M -10 32 Q 0 35 10 32" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" />
+            <path d="M -5 36 Q 0 38 5 36" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+
+          </g>
+        </g>
+
+        <!-- Tech HUD Orbit Nodes around Avatar -->
+        <g transform="translate(0, 0)">
+          <circle cx="0" cy="-135" r="4" fill="#2563EB" filter="url(#glow-light-blue)" />
+          <circle cx="0" cy="135" r="4" fill="#059669" filter="url(#glow-light-blue)" />
+          <circle cx="-135" cy="0" r="4" fill="#7C3AED" filter="url(#glow-light-blue)" />
+          <circle cx="135" cy="0" r="4" fill="#0284C7" filter="url(#glow-light-blue)" />
+        </g>
+
+      </g>
+
+      <!-- Status Bar -->
+      <rect x="14" y="494" width="382" height="36" rx="0" fill="#F1F5F9" fill-opacity="0.95" />
+      <line x1="14" y1="494" x2="396" y2="494" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
+      <text x="26" y="516" class="font-mono" font-size="10" fill="#0284C7">sys@dev-box:~$</text>
+      <text x="130" y="516" class="font-mono" font-size="10" fill="#475569">status --ok</text>
+      <circle cx="215" cy="513" r="3" fill="#10B981" />
+      <rect x="226" y="505" width="6" height="13" fill="#0284C7" style="animation: cursorBlink 1s infinite;" />
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- RIGHT PANEL: MAIN PROFESSIONAL TERMINAL (Light Mode)              -->
+  <!-- ================================================================= -->
+  <g transform="translate(460, 32)" filter="url(#card-shadow-light)">
+    <!-- Main Frame -->
+    <rect width="688" height="546" rx="14" class="glass-card" />
+
+    <!-- Terminal Header Bar -->
+    <rect width="688" height="40" rx="14" fill="#F1F5F9" fill-opacity="0.95" />
+    <rect y="26" width="688" height="14" fill="#F1F5F9" fill-opacity="0.95" />
+    <line x1="0" y1="40" x2="688" y2="40" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
+
+    <!-- Control Dots -->
+    <circle cx="24" cy="20" r="5" fill="#EF4444" opacity="0.9" />
+    <circle cx="38" cy="20" r="5" fill="#F59E0B" opacity="0.9" />
+    <circle cx="52" cy="20" r="5" fill="#10B981" opacity="0.9" />
+
+    <text x="76" y="24" class="font-mono" font-size="11" fill="#475569" font-weight="500">~/mustafa_ozdemir.json</text>
+
+    <!-- Top Right Version Badge -->
+    <g transform="translate(566, 10)">
+      <rect width="104" height="20" rx="10" fill="#2563EB" fill-opacity="0.1" stroke="#2563EB" stroke-opacity="0.3" stroke-width="1" />
+      <text x="12" y="14" class="font-mono" font-size="9.5" fill="#1D4ED8" font-weight="600">v2.5.0 • ACTIVE</text>
+    </g>
+
+    <!-- Terminal Content Area -->
+    <g transform="translate(30, 60)">
+
+      <!-- Greeting & Name -->
+      <text x="0" y="24" class="font-sans" font-size="15" fill="#475569" font-weight="500">Hi 👋, I'm</text>
+      <text x="85" y="26" class="font-sans" font-size="28" fill="url(#accent-grad-light)" font-weight="800" letter-spacing="-0.5" filter="url(#glow-light-blue)">MUSTAFA ÖZDEMİR</text>
+
+      <!-- Role Typing Line -->
+      <g transform="translate(0, 66)">
+        <text x="0" y="16" class="font-mono" font-size="13.5" fill="#334155" font-weight="500">"role":</text>
+        <g transform="translate(75, 0)">
+          <g clip-path="url(#clip-type1-light)">
+            <text x="0" y="16" class="font-mono" font-size="13.5" fill="#0284C7" font-weight="600">"Full Stack Developer"</text>
+          </g>
+          <g clip-path="url(#clip-type2-light)">
+            <text x="0" y="16" class="font-mono" font-size="13.5" fill="#6D28D9" font-weight="600">"Java &amp; Spring Boot Specialist"</text>
+          </g>
+        </g>
+        <rect x="368" y="4" width="7" height="14" fill="#0284C7" style="animation: cursorBlink 1s infinite;" />
+      </g>
+
+      <!-- Divider 1 -->
+      <line x1="0" y1="108" x2="628" y2="108" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
+
+      <!-- Sequential Details List -->
+      <!-- Location -->
+      <g transform="translate(0, 134)">
+        <text class="font-mono" font-size="13" fill="#DB2777" font-weight="500">📍 "location":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#0F172A" font-weight="500">"Muratpaşa / Antalya, Turkey"</text>
+      </g>
+
+      <!-- Education -->
+      <g transform="translate(0, 168)">
+        <text class="font-mono" font-size="13" fill="#D97706" font-weight="500">🎓 "education":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#0F172A" font-weight="500">"Selçuk University - Computer Engineering"</text>
+      </g>
+
+      <!-- Focus -->
+      <g transform="translate(0, 202)">
+        <text class="font-mono" font-size="13" fill="#059669" font-weight="500">🚀 "focus":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#0F172A" font-weight="500">"Java, Spring Boot &amp; Microservices Architecture"</text>
+      </g>
+
+      <!-- Portfolio -->
+      <g transform="translate(0, 236)">
+        <text class="font-mono" font-size="13" fill="#2563EB" font-weight="500">🌐 "portfolio":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#0284C7" font-weight="600">"portfolyo.yazilimmotoru.com"</text>
+      </g>
+
+      <!-- Email -->
+      <g transform="translate(0, 270)">
+        <text class="font-mono" font-size="13" fill="#7C3AED" font-weight="500">✉️ "contact":</text>
+        <text x="145" class="font-sans" font-size="14" fill="#0F172A" font-weight="500">"mustafaaozdemiir@gmail.com"</text>
+      </g>
+
+      <!-- Divider 2 -->
+      <line x1="0" y1="308" x2="628" y2="308" stroke="rgba(15,23,42,0.08)" stroke-width="1" />
+
+      <!-- Skills Header & Pills -->
+      <text x="0" y="334" class="font-mono" font-size="12" fill="#475569" font-weight="700" letter-spacing="1">⚡ TECH STACK &amp; SKILLS</text>
+
+      <!-- Pills Row 1 (y = 352) -->
+      <g transform="translate(0, 352)">
+        <g class="skill-pill" transform="translate(0, 0)">
+          <rect width="70" height="28" rx="6" fill="#FFFFFF" stroke="#2563EB" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#2563EB" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Java</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(78, 0)">
+          <rect width="112" height="28" rx="6" fill="#FFFFFF" stroke="#059669" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#059669" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Spring Boot</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(198, 0)">
+          <rect width="74" height="28" rx="6" fill="#FFFFFF" stroke="#0891B2" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#0891B2" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">React</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(280, 0)">
+          <rect width="78" height="28" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#0284C7" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Flutter</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(366, 0)">
+          <rect width="64" height="28" rx="6" fill="#FFFFFF" stroke="#3B82F6" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#3B82F6" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Dart</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(438, 0)">
+          <rect width="102" height="28" rx="6" fill="#FFFFFF" stroke="#4F46E5" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#4F46E5" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">PostgreSQL</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(548, 0)">
+          <rect width="74" height="28" rx="6" fill="#FFFFFF" stroke="#DC2626" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#DC2626" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Oracle</text>
+        </g>
+      </g>
+
+      <!-- Pills Row 2 (y = 390) -->
+      <g transform="translate(0, 390)">
+        <g class="skill-pill" transform="translate(0, 0)">
+          <rect width="104" height="28" rx="6" fill="#FFFFFF" stroke="#D97706" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#D97706" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">TypeScript</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(112, 0)">
+          <rect width="74" height="28" rx="6" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#7C3AED" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Kotlin</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(194, 0)">
+          <rect width="78" height="28" rx="6" fill="#FFFFFF" stroke="#0284C7" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#0284C7" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Docker</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(280, 0)">
+          <rect width="58" height="28" rx="6" fill="#FFFFFF" stroke="#EA580C" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#EA580C" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Git</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(346, 0)">
+          <rect width="98" height="28" rx="6" fill="#FFFFFF" stroke="#059669" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#059669" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">REST APIs</text>
+        </g>
+
+        <g class="skill-pill" transform="translate(452, 0)">
+          <rect width="116" height="28" rx="6" fill="#FFFFFF" stroke="#6D28D9" stroke-width="1" />
+          <circle cx="12" cy="14" r="3" fill="#6D28D9" />
+          <text x="22" y="18" class="font-mono" font-size="11.5" fill="#1E293B" font-weight="600">Microservices</text>
+        </g>
+      </g>
+
+    </g>
+  </g>
+</svg>
