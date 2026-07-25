@@ -19,6 +19,14 @@
     <img src="https://img.shields.io/badge/Portfolio-00B4D8?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio"/>
   </a>
   &nbsp;
+  <a href="https://apps.apple.com/us/developer/mustafa-ozdemir/id1766318646" target="_blank">
+    <img src="https://img.shields.io/badge/App_Store-0D96F6?style=for-the-badge&logo=apple&logoColor=white" alt="App Store"/>
+  </a>
+  &nbsp;
+  <a href="https://play.google.com/store/apps/developer?id=Yaz%C4%B1l%C4%B1m+Motoru" target="_blank">
+    <img src="https://img.shields.io/badge/Google_Play-414141?style=for-the-badge&logo=google-play&logoColor=white" alt="Google Play"/>
+  </a>
+  &nbsp;
   <a href="mailto:mustafaaozdemiir@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Contact-7C3AED?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
